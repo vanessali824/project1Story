@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 
-<img src=![Simulator_Screen_Recording_-_iPhone_14_Pro_-_2023-02-27_at_18_03_15_AdobeExpress](https://user-images.githubusercontent.com/108141117/221718964-db205ce7-cc17-4647-af3c-804092f4c79d.gif) title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/NBxUr7u.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...adobe mp4 to gif
