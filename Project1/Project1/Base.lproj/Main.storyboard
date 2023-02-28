@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GyN-P0-wA6">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fFk-y6-HeI" userLabel="Main Stack View">
+                                <rect key="frame" x="16" y="60" width="343" height="337.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="pic1" translatesAutoresizingMaskIntoConstraints="NO" id="WsS-Rh-aHW">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="163"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="riC-tn-Ngj">
+                                        <rect key="frame" x="0.0" y="188" width="343" height="149.5"/>
+                                        <subviews>
+                                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="His Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPC-tv-bLb">
+                                                <rect key="frame" x="137" y="0.0" width="69.5" height="20.5"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Lhx-7l-VMw" appends="YES" id="PgE-10-fCI"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="His Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiM-yD-AET">
+                                                <rect key="frame" x="125.5" y="64.5" width="92.5" height="20.5"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="uvQ-kF-qX7" appends="YES" id="Jg8-EU-Br4"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" multipleTouchEnabled="YES" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="His Shield" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEk-h0-d0t">
+                                                <rect key="frame" x="133.5" y="129" width="76" height="20.5"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="han-XH-uJV" appends="YES" id="mr6-An-jUj"/>
+                                                </connections>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fFk-y6-HeI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Bwk-oV-ka6"/>
+                            <constraint firstItem="fFk-y6-HeI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IN9-Xn-NVa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFk-y6-HeI" secondAttribute="trailing" constant="16" id="jA5-eN-I1x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Captain America" id="Q3r-9O-5SU"/>
+                    <connections>
+                        <segue destination="wMR-mk-80M" kind="show" identifier="detailSegue1" id="yD9-sH-SIi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Lhx-7l-VMw">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="mTC-co-Cbs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uvQ-kF-qX7">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="b1M-Rs-tPb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="han-XH-uJV">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="fTS-5g-M6z"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="QKg-p1-eiy">
+            <objects>
+                <viewController id="wMR-mk-80M" customClass="StoryViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ypc-cm-BmZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-fU-qK0">
+                                <rect key="frame" x="16" y="60" width="343" height="591"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSY-Uh-tnc" userLabel="detailName">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="187"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-sQ-YE2">
+                                        <rect key="frame" x="0.0" y="202" width="343" height="187"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" text="BLAH..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99X-XX-jVd">
+                                        <rect key="frame" x="0.0" y="404" width="343" height="187"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PXt-k6-H9q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gHK-fU-qK0" firstAttribute="top" secondItem="PXt-k6-H9q" secondAttribute="top" constant="16" id="CNJ-d1-Bea"/>
+                            <constraint firstItem="PXt-k6-H9q" firstAttribute="bottom" secondItem="gHK-fU-qK0" secondAttribute="bottom" constant="16" id="IOu-Lh-5rO"/>
+                            <constraint firstItem="gHK-fU-qK0" firstAttribute="trailing" secondItem="ypc-cm-BmZ" secondAttribute="trailingMargin" id="OWZ-pt-JM7"/>
+                            <constraint firstItem="gHK-fU-qK0" firstAttribute="leading" secondItem="ypc-cm-BmZ" secondAttribute="leadingMargin" id="Sfo-sc-KWL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4iv-i5-Sg7"/>
+                    <connections>
+                        <outlet property="Image" destination="ePg-sQ-YE2" id="lL0-0G-MRS"/>
+                        <outlet property="Textbox" destination="99X-XX-jVd" id="48A-rj-NWR"/>
+                        <outlet property="detailName" destination="nSY-Uh-tnc" id="Sg3-96-qpP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jl6-sn-yRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WR6-lg-se3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GyN-P0-wA6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpw-MA-6Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mkh-KV-aJ9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-kX-QjE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pic1" width="310" height="163"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
